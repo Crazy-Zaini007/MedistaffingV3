@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Employees </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Pignose Calender -->
+    <link href="./plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="./plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="index.html" style="color: white;">
+                    MEDITEAM STAFFING 
+                </a>
+            </div>
+        </div>
+        <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <div class="input-group icons">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                        </div>
+                        <input type="search" class="form-control" placeholder="Search Dashboard" aria-label="Search Dashboard">
+                        <div class="drop-down animated flipInX d-md-none">
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="clearfix">
+                        <!-- <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                                <i class="mdi mdi-email-outline"></i>
+                                <span class="badge badge-pill gradient-1">3</span>
+                            </a>
+                            <div class="drop-down animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-heading d-flex justify-content-between">
+                                    <span class="">3 New Messages</span>  
+                                    <a href="javascript:void()" class="d-inline-block">
+                                        <span class="badge badge-pill gradient-1">3</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li class="notification-unread">
+                                            <a href="javascript:void()">
+                                                <img class="float-left mr-3 avatar-img" src="images/avatar/1.jpg" alt="">
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Saiful Islam</div>
+                                                    <div class="notification-timestamp">08 Hours ago</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-unread">
+                                            <a href="javascript:void()">
+                                                <img class="float-left mr-3 avatar-img" src="images/avatar/2.jpg" alt="">
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Adam Smith</div>
+                                                    <div class="notification-timestamp">08 Hours ago</div>
+                                                    <div class="notification-text">Can you do me a favour?</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <img class="float-left mr-3 avatar-img" src="images/avatar/3.jpg" alt="">
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Barak Obama</div>
+                                                    <div class="notification-timestamp">08 Hours ago</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <img class="float-left mr-3 avatar-img" src="images/avatar/4.jpg" alt="">
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Hilari Clinton</div>
+                                                    <div class="notification-timestamp">08 Hours ago</div>
+                                                    <div class="notification-text">Hello</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                                <i class="mdi mdi-bell-outline"></i>
+                                <span class="badge badge-pill gradient-2">3</span>
+                            </a>
+                            <div class="drop-down animated fadeIn dropdown-menu dropdown-notfication">
+                                <div class="dropdown-content-heading d-flex justify-content-between">
+                                    <span class="">2 New Notifications</span>  
+                                    <a href="javascript:void()" class="d-inline-block">
+                                        <span class="badge badge-pill gradient-2">5</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-present"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Events near you</h6>
+                                                    <span class="notification-text">Within next 5 days</span> 
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-present"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Event Started</h6>
+                                                    <span class="notification-text">One hour ago</span> 
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-present"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Event Ended Successfully</h6>
+                                                    <span class="notification-text">One hour ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-present"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Events to Join</h6>
+                                                    <span class="notification-text">After two days</span> 
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons dropdown d-none d-md-flex">
+                            <a href="javascript:void(0)" class="log-user"  data-toggle="dropdown">
+                                <span>English</span>  <i class="fa fa-angle-down f-s-14" aria-hidden="true"></i>
+                            </a>
+                            <div class="drop-down dropdown-language animated fadeIn  dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li><a href="javascript:void()">English</a></li>
+                                        <li><a href="javascript:void()">Dutch</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li> -->
+
+
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <!-- <li>
+                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Profile</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill gradient-1">3</div>
+                                            </a>
+                                        </li>
+                                        
+                                        <hr class="my-2">
+                                        <li> -->
+                                            <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock Screen</span></a>
+                                        </li>
+                                        <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     
+        <div class="nk-sidebar">           
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-label">
+                        <a href="Employee.html">Employees </a>
+                    </li>
+                    <li class="nav-label">
+                        <a href="Recruiter.html">Recruiters </a>
+                    </li>
+                    <li class="nav-label">
+                        <a href="#">Sales</a>
+                    </li>
+
+                    <li class="nav-label">
+                        <a href="ClientDashbaord.html">Clients </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="content-body">
+
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="javascript:void(0)">Home</a></li>
+                        <li class="breadcrumb-item active">
+                            <a href="javascript:void(0)">Employees Portal</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="container-fluid bg-white">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="text-center">Employees Portal</h4>
+                       
+                            <div>
+                                
+                          
+                                
+                                <form action="" id="profile">
+                                    <h4>Create Profile </h4>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">FirstName</label>
+                                                    <input type="text" name="username" class="form-control shadow rounded gradient-1" >
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Middle Name</label>
+                                                    <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Last Name</label>
+                                                    <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Email</label>
+                                                    <input type="email" name="email" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+                                        <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label for="">Address</label>
+                                                    <textarea type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" ></textarea>
+                                                </div>
+                                            </div>
+    
+                                           <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Date of Birth</label>
+                                                   <input type="date" class="form-control shadow rounded gradient-1" placeholder="">
+                                               </div>
+                                           </div>
+                                            <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">SSN (Hide the first 5 numbers)</label>
+                                                   <input type="text" class="form-control shadow rounded gradient-1" placeholder="">
+                                               </div>
+                                           </div>
+    
+                                           <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">SSN Picture</label>
+                                                   <input type="file" class="form-control shadow rounded gradient-1" placeholder="">
+                                               </div>
+                                           </div>
+                                           <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Licence Issue Date</label>
+                                                   <input type="date" class="form-control shadow rounded gradient-1" >
+                                               </div>
+                                           </div>
+                                            <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Licence Expiry Date</label>
+                                                   <input type="date" class="form-control shadow rounded gradient-1" >
+                                               </div>
+                                           </div>
+                                           <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">State</label>
+                                                <input type="text" class="form-control shadow rounded gradient-1">
+                                            </div>
+                                        </div>
+                                            <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">ID NO</label>
+                                                   <input type="text" class="form-control shadow rounded gradient-1" placeholder="" >
+                                               </div>
+                                           </div>
+                                           
+                                              <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">Upload Image</label>
+                                                <input type="file" class="form-control shadow rounded gradient-1">
+                                            </div>
+                                           </div>
+                                           
+                                           <div class="col-md-6 form-group">
+                                            <label for="">Select second ID</label>
+                                             <select name="" id="" class="form-control shadow rounded gradient-1">
+                                        
+                                            <option value="">Passport</option>
+                                            <option value="">Birth Certificate</option>
+                                            <option value="">Sate Issued ID</option>
+                                            <option value="">Military ID</option>
+                                            </select>
+                                            </div>
+                                             <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Issue Date</label>
+                                                   <input type="date" class="form-control shadow rounded gradient-1">
+                                               </div>
+                                           </div>
+                                     <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Expiry Date</label>
+                                                   <input type="date" class="form-control shadow rounded gradient-1">
+                                               </div>
+                                           </div>
+                                           <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">State</label>
+                                                <input type="text" class="form-control shadow rounded gradient-1">
+                                            </div>
+                                        </div>
+                                            <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Military ID</label>
+                                                   <input type="text" class="form-control shadow rounded gradient-1">
+                                               </div>
+                                           </div>
+                                              <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">Upload Image</label>
+                                                <input type="file" class="form-control shadow rounded gradient-1">
+                                            </div>
+                                           </div>
+
+                                           <a id="add" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3"> Add Demographics  </a>
+                                        </div>
+                                    </section>
+                                </form>
+                            
+                               
+                                
+                                <form action="" style="display:none" id="demo">
+                                    <h4>Demographics (OPTIONAL) </h4>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="">Race</label>
+                                                <select name="" id="" class="form-control shadow rounded gradient-1">
+                                                    <option value="">
+                                                       American Indian 
+                                                    </option>
+                                                    <option value="">
+                                                       Alaska native
+                                                    </option>
+                                                    <option value="">
+                                                       Asian
+                                                    </option>
+                                                    <option value="">
+                                                       black
+                                                    </option>
+                                                    <option value="">African African</option>
+                                                    <option value="">Hispanic or Latino</option>
+                                                    <option value="">native Hawaiian or other pacific islander</option>
+                                                    <option value="">White</option>
+                                                    <option value="">Filipino</option>
+                                                    
+   
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                           <div class="form-group">
+                                               <label for="">Gender</label>
+                                               <select name="" id="" class="form-control shadow rounded gradient-1">
+                                                   <option value="">
+                                                   Female 
+                                                   </option>
+                                                   <option value="">
+                                                     Male
+                                                  
+   
+                                               </select>
+                                           </div>
+                                       </div>
+                                       <a id="background" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3">Add Background Info </a>
+                                    </div>
+                                </form>
+
+                                 
+                                 
+                                 
+                         
+
+                               <!--Covid agreement form-->
+                                <!-- Button trigger modal -->
+
+                                <!-- Button trigger modal -->
+                                
+                                <!-- Modal -->
+                          
+
+                                 <div class="row" style="display: none;" id="info">
+                                     
+                                    <form action="">
+                                        <h4 class="mt-3">Background Information</h4>
+
+                                 <div class="row">
+                                     <div class="col-lg-12">
+                                         <p>The following questions are vital to assessing your qualifications for a position with Mediteam Staffing. Failure to answer these questions honestly may result in a denial of your application, or if already hired, subsequent termination of employment.</p>
+                                     </div>
+
+                                     
+                                    
+                                 </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                           
+                                               <br>
+                                                <label for="">Are you legally authorized to work in the United States of America? </label>
+                                                <br>
+                                                 <label>
+                                                     
+                                                   <input type="radio" name="optradio"> YES</label>
+                                                   <label>
+                                                   <input type="radio" name="optradio"> NO</label>
+                                            </div>
+                                        </div>
+                                    </form>
+
+								
+                                    <form action="">
+
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                           
+                                               <br>
+                                                <label for="">Have you ever had or are currently in the process of having your license or certification, in any state, denied, investigated, suspended, restricted or revoked?  </label>
+                                               
+                                                    <br>
+                                                    <label>
+                                                        
+                                                      <input type="radio" name="optradio"> YES</label>
+                                                      <label>
+                                                      <input type="radio" name="optradio"> NO</label>
+                                            </div>
+                                        </div>
+
+                                    </form>
+
+
+                                    <form action="">
+
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                           
+                                               <br>
+                                                <label for="">Have you ever been convicted of a crime, assault or a felony </label>
+                                                <br>
+                                                <label>
+                                                    
+                                                  <input type="radio" name="optradio"> YES</label>
+                                                  <label>
+                                                  <input type="radio" name="optradio"> NO</label>
+                                            </div>
+                                        </div>
+                                    </form>
+
+
+                                     <form action="">
+
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                           
+                                               <br>
+                                                <label for="">Have you ever relinquished your license or certification in lieu of an investigation or discipline?  </label>
+                                                <br>
+                                                <label>
+                                                    
+                                                  <input type="radio" name="optradio"> YES</label>
+                                                  <label>
+                                                  <input type="radio" name="optradio"> NO</label>
+                                            </div>
+                                        </div>
+                                     </form>
+
+
+
+                                   <form action="">
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                       
+                                           <br>
+                                            <label for="">Have you ever been named as defendant in a professional liability action?  </label>
+                                            <br>
+                                                <label>
+                                                    
+                                                  <input type="radio" name="optradio"> YES</label>
+                                                  <label>
+                                                  <input type="radio" name="optradio"> NO</label>
+                                        </div>
+                                    </div>
+                                   </form>
+
+
+                                    <form action="">
+
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                           
+                                               <br>
+                                                <label for="">Have you previously been terminated from a position or assignment?  </label>
+                                                <br>
+                                                <label>
+                                                    
+                                                  <input type="radio" name="optradio"> YES</label>
+                                                  <label>
+                                                  <input type="radio" name="optradio"> NO</label>
+                                            </div>
+                                        </div>
+                                    </form>
+
+
+                                     <form action="">
+
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                           
+                                               <br>
+                                                <label for="">Is there any reason that you are unable to perform the essential functions of the position for which you are applying safely and according to accepted standards of performance with or without reasonable accommodation?  </label>
+                                                <br>
+                                                <label>
+                                                    
+                                                  <input type="radio" name="optradio"> YES</label>
+                                                  <label>
+                                                  <input type="radio" name="optradio"> NO</label>
+                                            </div>
+                                        </div>
+
+                                        <a id="make" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3"> Make Resume </a>
+                                     </form>
+									 
+                                       
+                                 </div>
+
+                                 
+								 
+								 
+
+										  <form action="" style="display: none;" id="resume">
+                                            <h4 class="text-center mt-3">Make Resume</h4>
+							
+                                            <h4 class=" mt-3">1. Education</h4>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="">College OR Universiy</label>
+                                                        <input type="text" class="form-control shadow rounded gradient-1">
+                                                    </div>
+                                                </div>
+                                             <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="">Year Of Graduation</label>
+                                                        <input type="date" class="form-control shadow rounded gradient-1">
+                                                    </div>
+                                                </div>
+                                            <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="">Degree Title</label>
+                                                        <input type="text" class="form-control shadow rounded gradient-1">
+                                                    </div>
+                                                </div>
+                                                 <div class="col-md-6">
+                                                 <div class="form-group">
+                                                 <label for=""></label>
+                                                 <input type="submit" class="btn btn-primary form-control shadow rounded gradient-24" value="Add More Education">
+                                                 </div>
+                                                 </div>
+
+                                                 <a id="expe" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3"> Add Experience</a>
+                                           </div>
+                                          </form>
+
+
+								       
+										  	 
+                                        <form action="" style="display: none;" id="year">
+                                            <h4 class=" mt-3 text-center">2. Add Experience Last 3 years</h4>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="">Facility Name</label>
+                                                        <input type="text" class="form-control shadow rounded gradient-1">
+                                                    </div>
+                                                </div>
+                                             <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="">Date From</label>
+                                                        <input type="date" class="form-control shadow rounded gradient-1">
+                                                    </div>
+                                                </div>
+                                                  
+                                            <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="">Date To</label>
+                                                        <input type="date" class="form-control shadow rounded gradient-1">
+                                                    </div>
+                                                </div>
+                                                
+                                                 <div class="col-md-6">
+                                                 <div class="form-group">
+                                                 <label for=""></label>
+                                                 <input type="submit" class="btn btn-primary form-control shadow rounded gradient-24" value="Add More Experience">
+                                                 </div>
+                                                 </div>
+                                                   <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="">Upload CV</label>
+                                                        <input type="file" class="form-control shadow rounded gradient-1">
+                                                    </div>
+                                                </div>
+
+                                                <a id="emr" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3"> Add EMR Systerm</a>
+
+                                           </div>
+                                        </form>
+
+
+
+								 
+										  
+
+                                  <form action="" style="display: none;" id="system">
+                                    <h4 class=" mt-3">EMR/ Charting System</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">Facility Name</label>
+                                                <input type="text" class="form-control shadow rounded gradient-1">
+                                            </div>
+                                        </div>
+                                     <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">Date From</label>
+                                                <input type="date" class="form-control shadow rounded gradient-1">
+                                            </div>
+                                        </div>
+                                          
+                                    <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">Date To</label>
+                                                <input type="date" class="form-control shadow rounded gradient-1">
+                                            </div>
+                                        </div>
+                                        
+                                         <div class="col-md-6">
+                                         <div class="form-group">
+                                         <label for=""></label>
+                                         <input type="submit" class="btn btn-primary form-control shadow rounded gradient-24" value="Add More">
+                                         </div>
+                                         </div>
+                                           <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">Upload CV</label>
+                                                <input type="file" class="form-control shadow rounded gradient-1">
+                                            </div>
+                                        </div>
+                                        <a id="your" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3"> Add Certification</a>
+                                   </div>
+                                  </form>
+
+
+                                 
+                                 
+
+                                  <form action="" style="display: none;" id="certi">
+                                    <h4 class=" mt-3">Certification</h4>
+                                    <div class="row">
+                                     
+
+                                        <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Select Certificate</label>
+                                              <select name="" id="" class="form-control shadow rounded gradient-1">
+                                                  <option value="">ACLS</option>
+                                                  <option value="">BLS</option>
+                                                  <option value="">PALS</option>
+                                                  <option value="">Other Certifications </option>
+                                                  
+           
+                              
+           
+                                                  
+                                              </select>
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Issuance Date</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Expiration Date </label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      
+                                      
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Upload Document</label>
+                                              <input type="file" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                          <label for=""></label>
+                                          <input type="submit" class="btn btn-primary form-control shadow rounded gradient-24" value="Add More">
+                                          </div>
+                                          </div>
+
+                                          <a id="emer" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3"> Add Emergency Contacts</a>
+  
+                                    </div>
+                                  </form>
+
+
+                                  
+                                  
+                                  <form action="" style="display: none;" id="contact">
+                                    <h4 class=" mt-3">Emergency Contacts</h4>
+                                    <div class="row">
+                                     
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="">Firstname</label>
+                                                <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="">Middle Name</label>
+                                                <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="">Last Name</label>
+                                                <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="">Relation to provider</label>
+                                                <input type="text" name="" id="" class="form-control shadow rounded gradient-1">
+                                                   
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="">Phone Number</label>
+                                                <input type="text" name="" id="" class="form-control shadow rounded gradient-1">
+                                                   
+                                            </div>
+                                        </div>
+    
+                                        
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                            <label for=""></label>
+                                            <input type="submit" class="btn btn-primary form-control shadow rounded gradient-24" value="Add More">
+                                            </div>
+                                            </div>
+
+                                            <a id="spec" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3"> Add Specialties Checklist</a>
+    
+                                      </div>
+                                  </form>
+
+
+
+                                  
+                                  
+
+                                  <form action="" style="display: none;" id="check">
+                                    <h4 class=" mt-3">Specialties Checklist </h4>
+                                    <div class="row">
+                                     
+
+                                        <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Specialties</label>
+                                              <select name="" id="" class="form-control shadow rounded gradient-1">
+                                                  <option value="">APHERESIS</option>
+                                                  <option value="">Burns Specialty Care </option>
+                                                  <option value="">Cardiac Cath Lab</option>
+                                                  <option value="">Coronary Care (CCU)  </option>
+                                                  <option value="">Coronary ICU Stepdown (CISD)</option>
+                                                  <option value="">Cardiovascular ICU (CVICU)</option>
+                                                  <option value="">Cardiovascular Operating Room (CVOR) </option>
+                                                  <option value="">Emergency Department (ED)</option>
+                                                  <option value="">Endoscopy</option>
+                                                  <option value="">Employee Health</option>
+                                                  <option value="">Geriatrics</option>
+                                                  <option value="">Hemodialysis</option>
+                                                  <option value="">Labor and Delivery</option>
+                                                  <option value="">Intensive Care (ICU) </option>
+                                                  <option value="">Infection control</option>
+                                                  <option value="">Medical and Surgical </option>
+                                                  <option value="">Medical Intensive Care (MICU)</option>
+                                                  <option value="">Medical ICU Stepdown (MISD)</option>
+                                                  <option value="">Neurology</option>
+                                                  <option value="">Neonatal Intensive Care (NICU)</option>
+                                                  <option value="">Neurosurgical Intensive Care (NSICU)</option>
+                                                  <option value="">Neurological ICU Stepdown (NSSD)	</option>
+                                                  <option value="">OB/GYN</option>
+                                                  <option value="">Oncology </option>
+                                                  <option value="">Operating Room (OR)</option>
+                                                  <option value="">Orthopedics </option>
+                                                  <option value="">Post-Operative (PACU) </option>
+                                                  <option value="">Pediatrics</option>
+                                                  <option value="">Pediatrics Intensive Care (PICU)</option>
+                                                  <option value="">Post partum</option>
+                                                  <option value="">Pre-Operative OR (Pre-OP)</option>
+                                                  <option value="">Psychiatry</option>
+                                                  <option value="">Rehabilitation</option>
+                                                  <option value="">Surgical Intensive Care (SICU) </option>
+                                                  <option value="">Surgical ICU Stepdown (SISD) </option>
+                                                  <option value="">Surgical Transplants </option>
+                                                  <option value="">Telemetry</option>
+                                                  <option value="">Vent /Trach</option>
+                                                  <option value="">Home care/Visiting RN</option>
+                                                  <option value="">Clinic</option>
+                                                  <option value="">Correction</option>
+                                                  <option value="">School nurse</option>
+                                                  <option value="">Supervisor</option>
+                                                  <option value="">MDS coordinator</option>
+                                                  <option value="">Assistant director of nurses </option>
+                                                  <option value="">Director of nurses </option>
+                                                  <option value="">Educator</option>
+                                                  <option value="">Public health nurse</option>
+                                                 
+                                                  
+                                                  
+           
+                              
+           
+                                                  
+                                              </select>
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Issuance Date</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                     
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Date Completed (within 1 year)</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1" placeholder="Expiration date ">
+                                                 
+                                          </div>
+                                      </div>
+                                      
+                                      
+                                      <div class="col-md-12">
+                                          <div class="form-group">
+                                              <label for="">Orientation</label>
+                                              <input type="text" name=""  id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+
+                                      <a id="medi" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3"> Add Medical Records</a>
+                                      
+  
+                                    </div>
+                                  </form>
+
+
+                                  <div style="display: none;" id="record">
+                                 <form action="" >
+
+                                    <h4 class=" mt-3">MEDICAL RECORDS</h4>
+                                    <h4 class=" mt-3">1.	Hepatitis-B</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                         
+                                          <div class="form-group">
+                                              
+                                              <label for="">Type</label>
+                                              <select name="" id="" class="form-control shadow rounded gradient-1">
+                                                  <option value="">Series </option>
+                                                  <option value="">Titer</option>
+                                              </select>
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Date</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Upload Lab Records </label>
+                                              <input type="file" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      
+  
+                                    </div>
+                                 </form>
+
+
+                                 <form action="">
+
+                                    <h4 class=" mt-3">2.	MMR or Titers</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                         
+                                          <div class="form-group">
+                                              
+                                              <label for="">Type</label>
+                                              <select name="" id="" class="form-control shadow rounded gradient-1">
+                                                  <option value="">MMR</option>
+                                                  <option value="">Titer</option>
+                                              </select>
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Date</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Upload Lab Records </label>
+                                              <input type="file" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      
+  
+                                    </div>
+                                 </form>
+
+
+
+                                 <form action="">
+
+                                    <h4 class=" mt-3">3.	TDAP vaccine</h4>
+                                    <div class="row">
+                                     
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Date</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Expiration Date</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-lg-12">
+                                          <div class="form-group">
+                                         
+                                             <br>
+                                              <label for="">I decline to receive TDAP vaccine</label>
+                                              <br>
+                                               <label>
+                                                 <input type="radio" name="optradio"> YES</label>
+                                                 <label>
+                                                 <input type="radio" name="optradio"> NO</label>
+                                          </div>
+                                      </div>
+                                      
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Upload Lab Records </label>
+                                              <input type="file" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                    </div>
+                                 </form>
+
+
+
+                                 <form action="">
+
+                                    <h4 class=" mt-3">4.	Varicella Vaccine or Titers</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                         
+                                          <div class="form-group">
+                                              
+                                              <label for="">Type</label>
+                                              <select name="" id="" class="form-control shadow rounded gradient-1">
+                                                  <option value="">Vaccination</option>
+                                                  <option value="">Titer</option>
+                                                  <option value="">Immune by History</option>
+                                              </select>
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Issuance Date</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Upload Lab Records </label>
+                                              <input type="file" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Can Upload Multiple Records </label>
+                                              <input type="file" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      
+  
+                                    </div>
+                                 </form>
+
+
+                                  
+                                 <form action="">
+
+                                    <h4 class=" mt-3">5.	PPD Skin Test/ Tb blood test/ T-spot / Chest X-ray</h4>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                       
+                                        <div class="form-group">
+                                            
+                                            <label for="">Type</label>
+                                            <select name="" id="" class="form-control shadow rounded gradient-1">
+                                                <option value="">PPD</option>
+                                                <option value="">T-Spot</option>
+                                                <option value="">Chest X-Ray</option>
+                                                <option value="">QuantiFERON TB Gold Test</option>
+                                                <option value="">2 Step PPD</option>
+                                               
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Date</label>
+                                            <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                               
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Expiration (1 year from date)</label>
+                                            <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                               
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="form-group shadow rounded mt-5">
+                                            <h5>Click <a href="" style="color: blue;"> HERE</a> for TB Questionnaire form  *pls see forms</h5>
+                                               
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Electronic Signature Date </label>
+                                            <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                               
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">TB Record Upload</label>
+                                            <input type="file" name="" id="" class="form-control shadow rounded gradient-1">
+                                               
+                                        </div>
+                                    </div>
+
+                                  </div>
+                                 </form>
+
+
+                                 <form action="">
+
+                                    <h4 class=" mt-3">6.	Covid-19 Vaccination</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                          <div class="form-group">
+                                              
+                                              <label for="">1st Dose Date</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                              
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">2nd Dose date</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Booster</label>
+                                              <input type="text" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                     
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Exemption Reasons</label>
+                                              <select  name="" id="" class="form-control shadow rounded gradient-1">
+                                                  <option value="">Medical</option>
+                                                  <option value="">religious</option>
+                                                  <option value="">N/A</option>
+                                              </select>
+                                                 
+                                          </div>
+                                      </div>
+  
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Covid-19 Vaccination Record Upload</label>
+                                              <input type="file" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6 ">
+                                          <div class="form-group shadow rounded mt-5">
+                                              <h5>Click <a href="" style="color: blue;"> HERE</a> for TB Questionnaire form  *pls see forms</h5>
+                                                 
+                                          </div>
+                                      </div>
+  
+                                    </div>
+                                 </form>
+
+
+                                 <form action="">
+
+                                    <h4 class=" mt-3">7.	Flu shot</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                          <div class="form-group">
+                                              
+                                              <label for="">Date</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                              
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Expiration: (1 year from date)</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+  
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Influenza Record Upload</label>
+                                              <input type="file" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6 ">
+                                          <div class="form-group shadow rounded mt-5">
+                                              <h5>Click <a href="" style="color: blue;"> HERE</a> for TB Questionnaire form  *pls see forms</h5>
+                                                 
+                                          </div>
+                                      </div>
+  
+                                    </div>
+                                 </form>
+
+
+                                  
+                                  <form action="">
+                                    <h4 class=" mt-3">8.	10 PANEL URINE TEST</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                          <div class="form-group">
+                                              
+                                              <label for="">Date</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                              
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Expiration: (1 year from date)</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+  
+  
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="">Upload Record</label>
+                                              <input type="file" name="" id="" class="form-control shadow rounded gradient-1">
+                                                 
+                                          </div>
+                                      </div>
+  
+                                      <div class="col-lg-12">
+                                          <div class="form-group">
+                                         
+                                             <br>
+                                              <label for="">N95 Fit Tested</label>
+                                              <br>
+                                               <label>
+                                                 <input type="radio" name="optradio"> YES</label>
+                                                 <label>
+                                                 <input type="radio" name="optradio"> NO</label>
+                                          </div>
+                                      </div>
+
+                                      <a id="ref" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3"> Add Reference</a>
+                                  
+                                    </div>
+                                  </form>
+
+                                  </div>
+
+
+
+                                  <form action="" style="display: none;" id="ref1">
+                                    <h4 class=" mt-3">REFERENCE</h4>
+                                    <section>
+                                        <h4 class=" mt-3">Reference-01</h4>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Firstname</label>
+                                                    <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Middle Name</label>
+                                                    <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Last Name</label>
+                                                    <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Email</label>
+                                                    <input type="email" name="email" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+                                        <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Cell Phone</label>
+                                                    <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+    
+                                           <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Work phone </label>
+                                                   <input type="text" class="form-control shadow rounded gradient-1" placeholder="">
+                                               </div>
+                                           </div>
+                                            <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Facility name</label>
+                                                   <input type="text" class="form-control shadow rounded gradient-1" placeholder="">
+                                               </div>
+                                           </div>
+    
+                                           <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Facility address</label>
+                                                   <input type="text" class="form-control shadow rounded gradient-1" placeholder="">
+                                               </div>
+                                           </div>
+                                           <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Unit </label>
+                                                   <input type="text" class="form-control shadow rounded gradient-1" placeholder="">
+                                               </div>
+                                           </div>
+                                            <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Start date</label>
+                                                   <input type="date" class="form-control shadow rounded gradient-1" >
+                                               </div>
+                                           </div>
+                                           <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">End date</label>
+                                                <input type="date" class="form-control shadow rounded gradient-1">
+                                            </div>
+                                        </div>
+                                           
+
+                                        <a id="refff" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3"> Add Reference 02</a>
+                                           
+                                        </div>
+                                    </section>
+                                </form>
+
+                                <form action="" style="display: none;" id="ref2">
+                                   
+                                    <section>
+                                        <h4 class=" mt-3">Reference-02</h4>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Firstname</label>
+                                                    <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Middle Name</label>
+                                                    <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Last Name</label>
+                                                    <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Email</label>
+                                                    <input type="email" name="email" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+                                        <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="">Cell Phone</label>
+                                                    <input type="text" name="username" class="form-control shadow rounded gradient-1" placeholder="" >
+                                                </div>
+                                            </div>
+    
+                                           <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Work phone </label>
+                                                   <input type="text" class="form-control shadow rounded gradient-1" placeholder="">
+                                               </div>
+                                           </div>
+                                            <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Facility name</label>
+                                                   <input type="text" class="form-control shadow rounded gradient-1" placeholder="">
+                                               </div>
+                                           </div>
+    
+                                           <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Facility address</label>
+                                                   <input type="text" class="form-control shadow rounded gradient-1" placeholder="">
+                                               </div>
+                                           </div>
+                                           <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Unit </label>
+                                                   <input type="text" class="form-control shadow rounded gradient-1" placeholder="">
+                                               </div>
+                                           </div>
+                                            <div class="col-md-6">
+                                               <div class="form-group">
+                                                   <label for="">Start date</label>
+                                                   <input type="date" class="form-control shadow rounded gradient-1" >
+                                               </div>
+                                           </div>
+                                           <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">End date</label>
+                                                <input type="date" class="form-control shadow rounded gradient-1">
+                                            </div>
+                                        </div>
+                                        <a id="hippa" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3"> See HIPPA Agreement</a>
+                                           
+                                        </div>
+                                    </section>
+                                </form>
+
+
+
+                                <div class="modal fade" id="Hippa">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">HIPAA Agreement</h5>
+                                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                               
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <form action=""style="display: none;" id="hippa1">
+                                    <h4 class="mt-3">HIPAA Agreement </h4>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                               <button type="button" class="btn btn-primary gradient-24" data-toggle="modal" data-target="#Hippa">HIPPA Agreement</button><br>
+                                               <br>
+                                                <label for="">I have read and understand the HIPAA Agreement and agree to all terms. </label>
+                                                <br>
+                                                 <label>
+                                                   <input type="radio" name="optradio"> YES</label>
+                                                   <label>
+                                                   <input type="radio" name="optradio"> NO</label>
+                                            </div>
+                                        </div>
+   
+                                        <a id="osha" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3">See OSHA Ahreement</a>
+                                       
+                                    </div>
+                                </form>
+
+
+
+                                 <div class="modal fade" id="Osha">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">OSHA Agreement</h5>
+                                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                               
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                 <form action="" style="display: none;" id="osha1">
+
+                                    <h4 class="mt-3">OSHA Agreement </h4>
+
+                                 <div class="row">
+                                     <div class="col-lg-12">
+                                         <div class="form-group">
+                                            <button type="button" class="btn btn-primary gradient-24" data-toggle="modal" data-target="#Osha">OSHA Agreement</button><br>
+                                            <br>
+                                             <label for="">I have read and understand the OSHA agreement and agree to all terms. </label>
+                                             <br>
+                                              <label>
+                                                <input type="radio" name="optradio"> YES</label>
+                                                <label>
+                                                <input type="radio" name="optradio"> NO</label>
+                                         </div>
+                                     </div>
+
+                                     <a id="covid" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3">See COVID-19 Agreement</a>
+
+                                     
+                                    
+                                 </div>
+                                 </form>
+
+                                 
+                                
+
+                               <!--Covid agreement form-->
+                                <!-- Button trigger modal -->
+
+                                <!-- Button trigger modal -->
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLong">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Covid Agreement</h5>
+                                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                               
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <form action="" style="display: none;" id="covid-19">
+                                    <h4 class="mt-3">COVID-19 Agreement  </h4>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                               <button type="button" class="btn btn-primary gradient-24" data-toggle="modal" data-target="#exampleModalLong">Covid Agreement</button><br>
+                                               <br>
+                                                <label for="">I have read and understand the Covid-19 Health and Safety Protocols agreement and agree to all terms </label>
+                                                 <label>
+                                                   <input type="radio" name="optradio"> YES</label>
+                                                   <label>
+                                                   <input type="radio" name="optradio"> NO</label>
+                                            </div>
+                                        </div>
+   
+                                        <a id="orie" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3">See Orientation</a>
+                                       
+                                    </div>
+   
+                                </form>
+
+
+
+                                <form action="" style="display: none;" id="orien">
+                                    <h4 class="mt-3">ORIENTATION</h4>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                          <div class="form-group">
+                                              
+                                              <label for="">Orientation</label>
+                                              <textarea type="text" name="" id="" class="form-control shadow rounded gradient-1"> </textarea>
+                                              
+                                          </div>
+                                      </div>
+                                      
+                                      <a id="take" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3">Take Annual Orientation Quiz</a>
+  
+                                  
+                                    </div>
+                                  </form>
+
+
+                                  <form action="" style="display: none;" id="quiz">
+                                    <h4>Annual Orientation Quiz</h4>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>Click <a href="" style="color: blue;">HERE</a> to take our annual training quiz. We require that our staff get at least an 80% to pass.</p>
+                                          <div class="form-group">
+                                              
+                                              <label for="">Date completed</label>
+                                              <input type="date" name="" id="" class="form-control shadow rounded gradient-1"> 
+                                              
+                                          </div>
+                                      </div>
+  
+                                      <a id="contr" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3">See  Contract Agreement</a>
+                                  
+                                    </div>
+                                  </form>
+
+                                  <form action="" style="display: none;"  id="contract">
+                                    <h4  class="mt-3">CONTRACT AGREEMENT</h4>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4 class="mt-3">Attention</h4>
+                                            <div class="form-group">
+                                              
+                                                <label for="">I have read and understand the Employee agreement and agree to all terms </label>
+                                                
+                                                <br>
+                                                <label>
+                                                    <input type="radio"> YES</label>
+                                                    <label>
+                                                        <input type="radio"> NO</label>
+                                            </div>
+                                          
+                                      </div>
+  
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="">Date</label>
+                                          <input type="date" name="" id="" class="form-control shadow rounded gradient-1">
+                                      </div>
+                                  </div>
+
+                                  <a id="time" type="submit" class="btn btn-block btn-primary shadow rounded gradient-3">Upload Time Sheet</a>
+
+                                    </div>
+                                  </form>
+
+
+                                  <form action="" style="display: none;" id="sheet">
+                                    <h4 class="mt-3">Time Sheet</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            
+                                          <div class="form-group">
+                                              
+                                              <label for="">Upload Time Sheet</label>
+                                              <input type="file" name="" id="" class="form-control shadow rounded gradient-1"> 
+                                              
+                                          </div>
+                                      </div>
+  
+                                      <input type="submit" class="btn btn-block btn-primary shadow rounded gradient-3" value="Save">
+                                  
+                                    </div>
+                                  </form>
+
+                                  
+
+                                  <div class="row my-4">
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                   <h4> Job Post Board</h4>
+                                                </div>
+                                                <div class="active-member">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-xs mb-0">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>State</th>
+                                                                    <th>Profession</th>
+                                                                     <th>Hours</th>
+                                                                    
+                                                                  
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Sarah Smith</td>
+                                                                    <td>lorem</td>
+                                                                    <td>
+                                                                        <span>5</span>
+                                                                    </td>
+                                                                  
+                                                                    
+                                                                  
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Sarah Smith</td>
+                                                                    <td>Doctor</td>
+                                                                    <td>
+                                                                        <span>5</span>
+                                                                    </td>
+                                                                  
+                                                                    
+                                                                  
+                                                                </tr>
+
+                                                               <tr>
+                                                                    <td>Sarah Smith</td>
+                                                                    <td>Doctor</td>
+                                                                    <td>
+                                                                        <span>5</span>
+                                                                    </td>
+                                                                  
+                                                                    
+                                                                  
+                                                                </tr>
+                                                               
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                </div>
+
+
+                               
+                               
+                            </div>
+                      
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright ">
+                <p class="shadow rounded">Copyright &copy; Designed & Developed by <a href="/">mediteamstaffing.com</a> 2022</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="./plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="./plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="./plugins/d3v3/index.js"></script>
+    <script src="./plugins/topojson/topojson.min.js"></script>
+    <script src="./plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="./plugins/raphael/raphael.min.js"></script>
+    <script src="./plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="./plugins/moment/moment.min.js"></script>
+    <script src="./plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="./plugins/chartist/js/chartist.min.js"></script>
+    <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="./js/dashboard/dashboard-1.js"></script>
+
+
+    <script>
+    
+        $(document).ready(function(){
+                   
+                    $('#signup').click(function(){
+                        $('#profile').show(2000)
+                    });
+                  
+                    $('#driver').click(function(){
+                        $('#license').show(2000)
+                    });
+                  
+                    $('#background').click(function(){
+                        $('#info').show(2000)
+                    });
+                  
+                    $('#make').click(function(){
+                        $('#resume').show(2000)
+                    });
+                  
+                    $('#add').click(function(){
+                        $('#demo').show(2000)
+                    });
+                    $('#expe').click(function(){
+                        $('#year').show(2000)
+                    });
+                    $('#emr').click(function(){
+                        $('#system').show(2000)
+                    });
+                    $('#your').click(function(){
+                        $('#certi').show(2000)
+                    });
+                    $('#emer').click(function(){
+                        $('#contact').show(2000)
+                    });
+                    $('#spec').click(function(){
+                        $('#check').show(2000)
+                    });
+                    $('#medi').click(function(){
+                        $('#record').show(2000)
+                    });
+                    $('#ref').click(function(){
+                        $('#ref1').show(2000)
+                    });
+                    $('#refff').click(function(){
+                        $('#ref2').show(2000)
+                    });
+
+                    $('#take').click(function(){
+                        $('#quiz').show(2000)
+                    });
+
+                    $('#contr').click(function(){
+                        $('#contract').show(2000)
+                    });
+
+                    $('#time').click(function(){
+                        $('#sheet').show(2000)
+                    });
+                  
+                    $('#covid').click(function(){
+                        $('#covid-19').show(2000)
+                    });
+                    $('#hippa').click(function(){
+                        $('#hippa1').show(2000)
+                    });
+                    $('#osha').click(function(){
+                        $('#osha1').show(2000)
+                    });
+                    $('#orie').click(function(){
+                        $('#orien').show(2000)
+                    });
+
+                   
+                })
+    </script>
+
+</body>
+
+</html>
